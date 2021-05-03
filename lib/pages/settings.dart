@@ -9,6 +9,7 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold (
+
       appBar: AppBar (
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -27,7 +28,11 @@ class _SettingsState extends State<Settings> {
           )
         ),
         child: Container(
-          color:Colors.grey.withOpacity(0.2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0),topRight: Radius.circular(20)),
+            color:Colors.grey.withOpacity(0.2),
+          ),
+
           margin: EdgeInsets.only(
             top:150
           ),
